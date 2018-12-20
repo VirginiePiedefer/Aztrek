@@ -1,0 +1,109 @@
+// ===============SECTION DESTINATIONS===============
+
+.photo-pays {
+    font-family: $font-card;
+    font-size: $fsize-nav;
+    display: block;
+
+}
+
+.pays {
+    position: relative;
+}
+
+.pays .titre-pays {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+    font-family: $font-card;
+    color: $white;
+}
+
+.descriptif-voyage {
+    padding: 10px 10px 10px 15px;
+    margin: 0;
+}
+
+.descriptif-voyage p {
+    padding: 0;
+    margin: 0;
+}
+
+.plus {
+    align-items: center;
+
+}
+
+.card {
+    padding: 10px 10px;
+}
+
+.card-destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (min-width: $bp-medium) {
+
+    .card-destinations {
+            flex-wrap: wrap;
+    }
+
+    .card {
+        flex-direction: column;
+        flex-basis: 50%;
+        margin: auto;
+    }
+}
+
+// ===============SECTION THEMATIQUES==============
+
+.thématiques {
+    background-color: $light-green;
+    margin-top: 30px;
+}
+
+.img-vignette {
+    display: inline-block;
+    max-width: 102px;
+    max-height: 68px;
+    padding: 0;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.vignette p{
+color: $white;
+padding-left: 7px;
+padding-right: 7px;
+padding-top: 6px;
+padding-bottom: 6px;
+margin: 0;
+display: block;
+}
+
+.btn, .btn-toutvoir {
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+@media (min-width: $bp-medium) {
+
+.vignette {
+    display: flex;
+    padding-top: 5px;
+    margin-bottom: 40px;
+}
+
+.vignette p{
+    color: $dark-gray;
+    background: $white;
+    padding: 23px;
+}
+
+}

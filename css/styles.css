@@ -1,0 +1,335 @@
+@charset "UTF-8";
+body {
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Arial;
+  color: #000000; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  list-style: none;
+  padding: 0; }
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  align-items: center; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+.display-flex {
+  display: flex; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+h1,
+h2,
+h3,
+a {
+  padding: .5em;
+  margin: 0 auto; }
+
+h1,
+h2 {
+  text-align: center; }
+
+h1 {
+  font-family: "Amatic SC", "Helvetica Neue";
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 30px; }
+
+h2 {
+  font-family: "Annie Use Your Telescope", "Helvetica Neue";
+  font-size: 1.2em; }
+
+.bold {
+  font-weight: bold; }
+
+.underline {
+  border-bottom: #FF911A solid 5px; }
+
+.btn-fb {
+  color: #ffffff;
+  display: inline-block;
+  margin: auto;
+  font-size: 1rem;
+  background-color: #4267B2;
+  border-radius: 5px;
+  transition: .5s;
+  height: 43px;
+  width: 271px;
+  border: none; }
+  .btn-fb:hover, .btn-fb:focus {
+    background-color: #34518d;
+    color: #FFFFFF; }
+
+.btn {
+  color: #000000;
+  display: inline-block;
+  margin: auto;
+  font-size: 1rem;
+  background-color: #F26419;
+  border-radius: 5px;
+  transition: .5s;
+  height: 43px;
+  width: 271px;
+  border: none; }
+  .btn:hover, .btn:focus {
+    background-color: #cc4e0c;
+    color: #FFFFFF; }
+
+.main-nav {
+  background-color: #273C2C; }
+
+.logo-nav img {
+  display: inline-block;
+  margin-left: 50px;
+  padding: 0;
+  max-height: 100%;
+  width: 80px; }
+  @media (min-width: 768px) {
+    .logo-nav img {
+      width: 100px; } }
+
+.home {
+  padding-top: 10px; }
+
+.nav-toggle {
+  display: block;
+  font-size: 2rem;
+  height: 20px;
+  width: 20px;
+  background: url("../images/menu-icon-white.png");
+  background-size: cover;
+  padding: 15px; }
+
+.menu-1 {
+  display: none; }
+
+.menu-1-item {
+  display: inline-block;
+  padding: .5rem 1rem;
+  font-family: "Amatic SC", "Helvetica Neue";
+  font-size: 1.56em;
+  color: #FFFFFF; }
+
+.sidr-class-home {
+  display: none; }
+
+.nav-1 {
+  justify-content: space-between;
+  align-items: center; }
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none; }
+
+  .menu-1 {
+    display: flex; }
+
+  .menu-1-item ul li a {
+    color: #FFFFFF; } }
+@media (min-width: 960px) {
+  .menu-1-item {
+    margin-left: 80px; } }
+.item {
+  display: block;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1; }
+
+.position {
+  position: relative;
+  z-index: 1; }
+
+.owl-dots {
+  display: none; }
+  @media (min-width: 768px) {
+    .owl-dots {
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      z-index: 10;
+      width: 100%;
+      text-align: center; } }
+
+.owl-nav {
+  display: none; }
+
+.logo {
+  display: block;
+  max-width: 150px;
+  position: absolute;
+  z-index: 5;
+  top: 80px;
+  right: 10px; }
+  @media (min-width: 768px) {
+    .logo {
+      max-width: 300px;
+      top: 200px;
+      left: 10px; } }
+  @media (min-width: 960px) {
+    .logo {
+      max-width: 400px;
+      top: 280px;
+      left: 10px; } }
+
+.icone-connexion {
+  padding: 10px; }
+
+.membres {
+  margin: 2px;
+  font-size: 0.75rem; }
+
+.connexion {
+  font-size: 0.75rem;
+  padding-top: 15px; }
+
+.pop-wrapper {
+  display: none; }
+
+@media (min-width: 768px) {
+  .pop-wrapper {
+    display: block;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    z-index: 5; }
+    .pop-wrapper .container {
+      position: relative;
+      display: flex;
+      justify-content: flex-end; }
+
+  .pop-up {
+    display: block;
+    background: rgba(249, 246, 246, 0.612);
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 5px; } }
+.nav-2 {
+  font-family: "Amatic SC", "Helvetica Neue";
+  font-size: 1rem;
+  color: #000000;
+  background: #F6AE2D; }
+
+.nav-2 a {
+  display: inline-block;
+  margin: 0; }
+
+@media (min-width: 768px) {
+  .nav-2 {
+    font-size: 1.56em; } }
+.zone-recherche input {
+  background: rgba(249, 246, 246, 0.612);
+  border: none;
+  text-align: center; }
+
+.loupe {
+  background: url("../images/icon-loupe.svg");
+  display: block;
+  font-size: 2rem;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  padding: 15px; }
+
+.photo-pays {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.56em;
+  display: block; }
+
+.pays {
+  position: relative; }
+
+.pays .titre-pays {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  font-family: "Fjalla One", sans-serif;
+  color: #fff; }
+
+.descriptif-voyage {
+  padding: 10px 10px 10px 15px;
+  margin: 0; }
+
+.descriptif-voyage p {
+  padding: 0;
+  margin: 0; }
+
+.plus {
+  align-items: center; }
+
+.card {
+  padding: 10px 10px; }
+
+.card-destinations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+@media (min-width: 768px) {
+  .card-destinations {
+    flex-wrap: wrap; }
+
+  .card {
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: auto; } }
+.thématiques {
+  background-color: #B0C4B1;
+  margin-top: 30px; }
+
+.img-vignette {
+  display: inline-block;
+  max-width: 102px;
+  max-height: 68px;
+  padding: 0;
+  margin-left: 10px;
+  padding-top: 5px; }
+
+.vignette p {
+  color: #fff;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 0;
+  display: block; }
+
+.btn, .btn-toutvoir {
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+  display: block; }
+
+@media (min-width: 768px) {
+  .vignette {
+    display: flex;
+    padding-top: 5px;
+    margin-bottom: 40px; }
+
+  .vignette p {
+    color: #666;
+    background: #fff;
+    padding: 23px; } }
+
+/*# sourceMappingURL=styles.css.map */

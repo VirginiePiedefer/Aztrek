@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 165">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-3 {
+        fill: #f25319;
+        font-size: 63px;
+        font-family: AmaticSC-Bold, Amatic SC;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-size: 25px;
+        font-family: AnnieUseYourTelescope-Regular, Annie Use Your Telescope;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_72" data-name="Groupe 72" transform="translate(-128 -213)">
+    <g id="Groupe_71" data-name="Groupe 71" transform="translate(333.264 845)">
+      <g id="Groupe_70" data-name="Groupe 70">
+        <path id="Tracé_98" data-name="Tracé 98" class="cls-1" d="M121.934,57.876c0-31.946-27.3-55.943-61.042-57.742C26.547-1.816,0,24.88,0,57.876c0,31.946,27.3,57.742,61.042,57.742S121.934,89.822,121.934,57.876Z" transform="translate(-121.783 -632.033)"/>
+        <g id="Groupe_69" data-name="Groupe 69" transform="translate(-122.264 -631.258)">
+          <path id="Tracé_99" data-name="Tracé 99" class="cls-2" d="M7.476,20.3s1.65.45,2.1,1.2-1.2.75-.75,1.2a4.649,4.649,0,0,1,.75,1.65l-.75.75.75,2.1-.75.75S7.176,32.9,6.726,32.9s-1.35-1.05-1.35-1.05-1.2,4.949.75,5.4c0,0-1.65,2.1-2.85,1.65s-.75,9.449-.75,9.449-1.05.9-1.8-.6C-.173,45.947-.023,30.2,7.476,20.3Z" transform="translate(-0.347 9.855)"/>
+          <path id="Tracé_100" data-name="Tracé 100" class="cls-2" d="M74.6,22.2" transform="translate(36.765 10.805)"/>
+          <path id="Tracé_101" data-name="Tracé 101" class="cls-2" d="M61.2,13.755s.75-.3.75,0c0,0,.6,1.05.3,1.05s2.7,1.2,2.4,1.8c0,0,.75-.3.75,0s.3,1.05,0,1.05c0,0-2.85,1.2-2.85.9a3.583,3.583,0,0,1,.45-1.05h-.75l.3-.3v-1.35l-.6-.45s-1.65-1.05-1.65-1.5c0-.3.45-.6.45-.6S61.2,13.156,61.2,13.755Z" transform="translate(29.618 6.351)"/>
+          <path id="Tracé_102" data-name="Tracé 102" class="cls-2" d="M59.967,15.43s.75-1.65,1.8.15-1.8,1.65-1.8,1.65S59.517,15.43,59.967,15.43Z" transform="translate(29.351 7.076)"/>
+          <ellipse id="Ellipse_33" data-name="Ellipse 33" class="cls-2" cx="4.949" cy="3.15" rx="4.949" ry="3.15" transform="matrix(0.035, -0.999, 0.999, 0.035, 64.457, 54.372)"/>
+          <ellipse id="Ellipse_34" data-name="Ellipse 34" class="cls-2" cx="2.85" cy="2.25" rx="2.85" ry="2.25" transform="translate(74.886 55.348) rotate(-78.569)"/>
+          <ellipse id="Ellipse_35" data-name="Ellipse 35" class="cls-2" cx="2.1" cy="1.65" rx="2.1" ry="1.65" transform="translate(81.771 58.974) rotate(-78.569)"/>
+          <ellipse id="Ellipse_36" data-name="Ellipse 36" class="cls-2" cx="1.5" cy="1.2" rx="1.5" ry="1.2" transform="translate(86.279 63.039) rotate(-78.569)"/>
+          <ellipse id="Ellipse_37" data-name="Ellipse 37" class="cls-2" cx="1.35" cy="1.05" rx="1.35" ry="1.05" transform="translate(89.268 68.242) rotate(-78.569)"/>
+          <path id="Tracé_103" data-name="Tracé 103" class="cls-2" d="M52.844,43.4s-3.9-9.449-13.648-1.05c0,0-.9,11.848,5.249,3.15l3.6.3L44.9,51.046s5.7-2.4,6.449.45a22.612,22.612,0,0,1,.45,6.449s5.7-1.35,5.549.45,5.7-2.4,10.949.9c0,0,2.55-2.7,7.2,4.649a8,8,0,0,1,5.849,5.549s9.6,7.2,1.05,11.1c0,0-3.9,15.3-16.348,20.847,0,0-5.849,11.1-8.4,9.749-2.4-1.35-3.3-14.248,3-24,0,0-15.9-15.448-4.649-23.4-1.35,1.2-16.8-12.3-14.7-13.048,1.35-.45-6.749,3.15-14.7-12.148s-.9-14.7-.9-14.7-6.149-4.2-4.049-6.749S8.3,22.1,8.3,22.1,22.4-4.6,67.392.953c0,0-11.4-.6-10.5,1.35.75,1.95,12.448,6.449,12.148,9.149-.15,2.7-3,2.55-3,2.55S54.794,1.553,53.294,5s13.8,19.2,13.8,19.2S57.344,44.6,52.844,43.4Z" transform="translate(3.628 -0.194)"/>
+          <path id="Tracé_104" data-name="Tracé 104" class="cls-2" d="M68.849,9.455S107.394,36,82.047,82.945c0,0-2.4-.75,2.7-24,0,0-1.05-.75-1.8-3.45-.75-2.85-10.5,5.7-11.7-4.5S76.2,31.052,84.3,33.452L82.8,28.8s-4.649-.3-1.5-4.649c0,0-2.4-4.8-3.75,1.65l1.65,3.75s-5.1-5.849-7.049-4.2c0,0,1.65,1.95,2.55,1.95s.9,1.05.9,1.05v1.8l-.75-1.95-3.6-1.95s-3.45,1.2-2.7.6c.45-.45-.3,4.649-.3,4.649s-5.7,2.4-5.549.6a9.884,9.884,0,0,0-.6-3.75s2.7.15,3.75-.6c1.05-.9-.9-3-.9-3H63.3v-.9l1.05-.9v-.9l.9,1.05,1.05-1.8,1.05-1.8-.75-1.95,1.65,1.95h.9l1.95-.75-.75-2.85s-2.4-4.8-3.45-3.9,1.8,4.2,1.8,4.2L64.95,14.7l-.45,2.1L63,15.754s3-4.649.3-4.049c0,0-1.5-4.649,5.7-2.4Z" transform="translate(30.518 4.053)"/>
+          <path id="Tracé_105" data-name="Tracé 105" class="cls-2" d="M16.657,52.6h-3.6l-2.7-3.6s-13.8,7.349.9,15.6c0,0,6.449,0,10.049,8.249,0,0,10.349-4.949-1.65-16.2C19.656,56.5,17.707,47.05,16.657,52.6Z" transform="translate(1.721 24.2)"/>
+        </g>
+      </g>
+      <text id="AZTREK" class="cls-3" transform="matrix(1, 0.007, -0.007, 1, -42.454, -501.316)"><tspan x="0" y="0">AZTREK</tspan></text>
+    </g>
+    <text id="Un_nouveau_monde_à_chaque_pas" data-name="Un nouveau monde à chaque pas" class="cls-4" transform="translate(128 367)"><tspan x="0" y="0">Un nouveau monde à chaque pas</tspan></text>
+  </g>
+</svg>
