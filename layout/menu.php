@@ -1,14 +1,23 @@
-<?php require_once __DIR__ . "/../config/parameters.php"; ?>
+<!-- ===============NAVIGATION SECONDAIRE===============
+======================================== -->
 
-<nav class="main-menu">
+<nav class="display-flex nav-2">
 
-    <a href="index.php">
-        <img src="images/logo.png" alt="Cooking Chef" class="logo-nav">
-    </a>
+    <div class="container">
+        <div>
+            <ul class="display-flex menu-2">
+                <li><a href="#">Carnets de bord</a></li>
+                <li><a href="#">Conseils</a></li>
+                <li>
+                    <form class="zone-recherche display-flex">
+                        <input class="rechercher" type="text" name="nom" placeholder="Rechercher">
+                        <div class="loupe"></div>
+                    </form>
+                </li>
 
-    <ul>
-        <li><a href="#"><i class="fa fa-cutlery"></i> Recettes</a></li>
-        <li><a href="#"><i class="fa fa-video-camera"></i> Vidéos</a></li>
-        <li><a href="<?= SITE_ADMIN; ?>"><i class="fa fa-sign-in"></i> Log in</a></li>
-    </ul>
+
+            </ul>
+        </div>
+
+    </div>
 </nav>
