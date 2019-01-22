@@ -46,12 +46,12 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                 </tr>
                 <?php foreach ($departs as $depart) : ?>
                     <tr>
-                        <td><?= $depart["date_debut"]; ?></td>
-                        <td><?= $depart["date_fin"]; ?></td>
-                        <!--                + durée en jours = date de fin-->
-                        <td><?= $depart["prix"]; ?></td>
+                        <td><?= $depart["date_debut_format"]; ?></td>
+                        <td><?= $depart["date_fin_format"]; ?></td>
+                        <!--              date début  + durée en jours = date de fin-->
+                        <td><?= $depart["prix"]; ?>€</td>
                         <td><?= $depart["places_dispo"]; ?></td>
-                        <!--                - nb réservations-->
+                        <!--              capacité  - nb réservations-->
                         <td>
                             <form action="">
                                 <button class="btn" type="submit">S'inscrire</button>

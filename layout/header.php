@@ -72,6 +72,7 @@ $liste_pays = getAllEntities("pays"); ?>
                         <li><a href="#"><i class="fa fa-user"></i> <?= $user["email"]; ?></a></li>
                         <li><a href="<?= SITE_ADMIN . "logout.php"; ?>"><i class="fa fa-sign-out"></i> DÉCONNEXION</a></li>
                     <?php else: ?>
+                        <li><a class="menu-1-item" href="<?= SITE_URL . "create_account.php"; ?>"><i class="fa fa-sign-in"></i> Créer mon compte</a></li>
                         <li><a class="menu-1-item" href="<?= SITE_ADMIN; ?>"><i class="fa fa-sign-in"></i> CONNEXION</a></li>
                     <?php endif; ?>
                 </ul>
