@@ -10,20 +10,20 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link <?php echo isActive("/crud/recette/") ? 'active' : ''; ?>" href="<?php echo SITE_ADMIN; ?>crud/recette/">
-                    <i class="fa fa-cutlery"></i>
-                    Recettes
+                    <i class="fa fa-globe"></i>
+                    Pays
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link <?php echo isActive("/crud/categorie/") ? 'active' : ''; ?>" href="<?php echo SITE_ADMIN; ?>crud/categorie/">
-                    <i class="fa fa-book"></i>
-                    Catégories
+                    <i class="fa fa-plane"></i>
+                    Séjours
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class="fa fa-tags"></i>
-                    Tags
+                    <i class="fa fa-book"></i>
+                    Catégories
                 </a>
             </li>
             <li class="nav-item">

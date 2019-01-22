@@ -1,0 +1,173 @@
+// ===============SECTION DESTINATIONS===============
+
+.photo-pays {
+    font-family: $font-card;
+    font-size: $fsize-nav;
+    display: block;
+
+}
+
+.pays {
+    position: relative;
+}
+
+.pays .titre-pays-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .titre-pays {
+        border-bottom: solid 2px;
+        border-top: solid 2px;
+        font-family: $font-card;
+        color: $white;
+        padding: 10px 40px;
+    }
+}
+
+.descriptif-voyage {
+    padding: 10px 10px 10px 15px;
+    margin: 0;
+}
+
+.descriptif-voyage p {
+    padding: 0;
+    margin: 0;
+}
+
+.plus {
+    align-items: center;
+
+}
+
+.card {
+    padding: 10px 10px;
+    max-width: 460px;
+}
+
+.card-destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (min-width: $bp-medium) {
+
+    .card-destinations {}
+
+    .card {
+        flex-basis: 50%;
+        margin: 0 auto;
+    }
+}
+
+.encart-voyage>div {
+    align-items: center;
+}
+
+// ===============SECTION THEMATIQUES==============
+
+.thematiques {
+    background-color: $light-green;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+.vignettes {
+// display: inline-block;
+    @media (min-width: $bp-medium) {
+    display: flex;
+    }
+}
+
+.img-vignette {
+    display: inline-block;
+    max-width: 102px;
+    max-height: 68px;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.vignette p {
+    color: $white;
+    padding: 6px 7px;
+    margin: 0;
+}
+
+.btn,
+.btn-toutvoir {
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    display: block;
+
+
+}
+
+@media (min-width: $bp-medium) {
+
+    .vignette {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .vignette p {
+        color: $dark-gray;
+        padding: 0 20px;
+        background: $white;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+// ===============SECTION CONSEILS==============
+
+.conseils {
+    .articles{
+        align-items: flex-start;
+        .encart{
+            p{
+                padding: .5rem;
+            }
+        }
+    }
+}
+
+.articles {
+
+    @media (min-width: $bp-medium) {
+display: flex;
+    }
+}
+
+// ===============SECTION CARNETS DE BORD==============
+
+.carnets {
+    align-items: flex-start;
+
+}
+
+.img-temoignage {
+    width: 167px;
+    height: 159px;
+    border-radius: 50%;
+}
+
+// .temoignages {
+//     margin: auto;
+//     align-items: flex-start;
+//     justify-content: center;
+//     text-align: center;
+// }
+
+.temoignage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

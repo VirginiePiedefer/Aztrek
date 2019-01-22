@@ -1,5 +1,12 @@
 <!-- ===============NAVIGATION SECONDAIRE===============
 ======================================== -->
+<?php
+require_once __DIR__ . "/../config/parameters.php";
+require_once __DIR__ . "/../functions.php";
+
+$user = getCurrentUser();
+?>
+
 
 <nav class="display-flex nav-2">
 
@@ -8,7 +15,7 @@
             <ul class="display-flex menu-2">
                 <li><a href="#">Carnets de bord</a></li>
                 <li><a href="#">Conseils</a></li>
-                <li>
+                                <li>
                     <form class="zone-recherche display-flex">
                         <input class="rechercher" type="text" name="nom" placeholder="Rechercher">
                         <div class="loupe"></div>

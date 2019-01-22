@@ -1,3 +1,14 @@
+<?php
+require_once __DIR__ . "/../config/parameters.php";
+require_once __DIR__ . "/../functions.php";
+
+$user = getCurrentUser();
+
+
+$liste_pays = getAllEntities("pays"); ?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -30,16 +41,20 @@
             <div class="nav-1 display-flex">
                 <a class="logo-nav" href="#"><img src="images/logo-nav-vectorise.svg" alt="logo"></a>
                 <ul class="menu menu-1 display-flex">
-                    <li><a class="icones menu-1-item home" href="index.php"><img src="images/icone-accueil.png" alt="home"></a>
+                    <li><a class="icones menu-1-item home" href="index.php"><img src="images/icone-accueil.png"
+                                                                                 alt="home"></a>
                     </li>
                     <li>
                         <a class="menu-destinations menu-1-item" href="#">DESTINATIONS</span></a>
                         <ul class="sub-menu">
-                            <li><a href="sejour.php">MEXIQUE</a></li>
-                            <li><a href="">HONDURAS</a></li>
-                            <li><a href="">COSTA RICA</a></li>
-                            <li><a href="">SALVADOR</a></li>
-                            <li><a href="">GUATEMALA</a></li>
+
+                            <?php foreach ($liste_pays as $pays) : ?>
+                                <li>
+                                    <a href="pagepays.php?id=<?= $pays["id"]; ?>">
+                                        <?= $pays["libelle"]; ?>
+                                    </a>
+                                </li>
+                            <?php endforeach; ?>
                         </ul>
                     </li>
 
@@ -53,7 +68,12 @@
 
                     </li>
                     <li><a class="menu-1-item" href="#">CONTACT</span></a></li>
-                    <li><a class="menu-1-item" href="#">CONNEXION</span></a></li>
+                    <?php if (isset($user)) : ?>
+                        <li><a href="#"><i class="fa fa-user"></i> <?= $user["email"]; ?></a></li>
+                        <li><a href="<?= SITE_ADMIN . "logout.php"; ?>"><i class="fa fa-sign-out"></i> DÉCONNEXION</a></li>
+                    <?php else: ?>
+                        <li><a class="menu-1-item" href="<?= SITE_ADMIN; ?>"><i class="fa fa-sign-in"></i> CONNEXION</a></li>
+                    <?php endif; ?>
                 </ul>
 
                 <div class="nav-toggle"></div>
@@ -61,7 +81,6 @@
 
         </div>
     </nav>
-
 
 
 </header>

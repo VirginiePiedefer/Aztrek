@@ -1,4 +1,58 @@
 <?php
+
+function getAllSejoursByPays(int $id)
+{
+    global $connection;
+
+    $query = "
+    SELECT
+      sejour.*,
+      categorie.libelle AS categorie,
+      categorie.image AS categorie_image,
+      pays.libelle AS pays,
+      pays.image AS pays_image
+    FROM sejour
+    INNER JOIN categorie ON sejour.categorie_id = categorie.id
+    INNER JOIN pays ON pays.id = sejour.pays_id
+    WHERE pays.id = :id
+    ";
+
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":id", $id);
+    $stmt->execute();
+
+    return $stmt->fetchAll();
+}
+
+//Appeler le séjour sélectionné
+
+function getOneSejour(int $id)
+{
+    global $connection;
+
+    $query = "
+    SELECT
+      sejour.*,
+      categorie.libelle AS categorie,
+      categorie.image AS categorie_image,
+      sejour.libelle AS sejour,
+      sejour.image AS sejour_image
+    FROM sejour
+    INNER JOIN categorie ON sejour.categorie_id = categorie.id
+    INNER JOIN pays ON pays.id = sejour.pays_id
+    WHERE sejour.id = :id
+    ";
+
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":id", $id);
+    $stmt->execute();
+
+    return $stmt->fetchAll();
+}
+
+
 function getAllRecettes(int $limit = 999)
 {
     global $connection;

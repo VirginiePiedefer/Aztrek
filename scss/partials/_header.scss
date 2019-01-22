@@ -1,0 +1,299 @@
+// ===========NAVIGATION===========
+
+
+.main-nav {
+  background-color: $dark-green;
+}
+
+.logo-nav img {
+  display: inline-block;
+  margin-left: 50px;
+  padding: 0;
+  max-height: 100%;
+  width: 80px;
+
+  @media (min-width: $bp-medium) {
+    width: 100px;
+  }
+}
+
+.home {
+  padding-top: 10px;
+}
+
+.nav-toggle {
+  display: block;
+  font-size: 2rem;
+  height: 20px;
+  width: 20px;
+  background: url("../images/menu-icon-white.png");
+  background-size: cover;
+  padding: 15px;
+}
+
+.menu-1 {
+  display: none;
+}
+
+
+.menu-1-item {
+  display: inline-block;
+  padding: .5rem 1rem;
+  font-family: $font-title;
+  font-size: $fsize-nav;
+  color: $fcolor-light;
+
+}
+
+.sidr-class-home {
+  display: none;
+}
+
+.nav-1 {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (min-width: $bp-medium) {
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .menu-1 {
+    display: flex;
+  }
+
+  .menu-1-item ul li a {
+    color: $fcolor-light;
+  }
+}
+
+@media (min-width: $bp-large) {
+
+  .menu-1-item {
+    margin-left: 80px;
+  }
+}
+
+// NAVIGATION ACTIVE
+
+.menu {
+  align-items: center;
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu > li {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.menu a {
+  display: block;
+}
+
+.menu > li:hover > a,
+.menu a:hover {
+  background-color: #804531;
+  color: #fff;
+}
+
+.menu > li > a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* 2eme niveau */
+
+.menu > li {
+  position: relative;
+  color: #fff;
+}
+
+.menu ul {
+  position: absolute;
+  width: 200px;
+  background-color: #fff;
+  left: -9999px;
+}
+
+.menu ul a {
+  padding: 10px;
+  color: #804531;
+}
+
+.menu > li:hover > ul {
+  left: 0;
+  color: #804531;
+  background-color: #fff;
+}
+
+.menu .sub-menu {
+  z-index: 2;
+}
+
+// ===========SLIDER===========
+.slider-pop {
+  position: relative;
+}
+
+.item {
+  display: block;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.position {
+  position: relative;
+  z-index: 1;
+}
+
+.owl-dots {
+  display: none;
+
+  @media (min-width: $bp-medium) {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+.owl-nav {
+  display: none;
+}
+
+.logo {
+  display: block;
+
+  max-width: 150px;
+  position: absolute;
+  z-index: 5;
+  top: 80px;
+  right: 10px;
+
+  @media (min-width: $bp-medium) {
+    max-width: 300px;
+    top: 100px;
+    left: 10px;
+  }
+
+  @media (min-width: $bp-large) {
+    max-width: 400px;
+    top: 180px;
+    left: 10px;
+  }
+
+}
+
+// ===========POP-UP===========
+
+.icone-connexion {
+  padding: 10px;
+}
+
+.membres {
+  margin: 2px;
+  font-size: $fsize-small;
+
+}
+
+.connexion {
+  font-size: $fsize-small;
+  padding-top: 15px;
+}
+
+.pop-wrapper {
+  display: none;
+
+}
+
+@media (min-width: $bp-medium) {
+
+  .pop-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  .pop-up {
+    display: block;
+    background: rgba(249, 246, 246, 0.612);
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 5px;
+    margin-right: 20px;
+
+    .ou {
+      margin: 0.5rem 0;
+    }
+  }
+
+}
+
+// ===========NAV SECONDAIRE===========
+
+.nav-2 {
+
+  font-family: $font-title;
+  font-size: $fsize-default;
+  color: $fcolor-dark;
+  background: $yellow;
+
+}
+
+.nav-2 a {
+  display: inline-block;
+  // padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $bp-medium) {
+
+  .nav-2 {
+    font-size: $fsize-nav;
+  }
+
+}
+
+.zone-recherche input {
+  background: rgba(249, 246, 246, 0.612);
+  border: none;
+  text-align: center;
+}
+
+.loupe {
+  background: url('../images/icon-loupe.svg');
+  display: block;
+  font-size: 2rem;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  padding: 15px;
+
+}

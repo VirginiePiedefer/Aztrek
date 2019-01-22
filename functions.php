@@ -8,6 +8,19 @@ function debug($var, bool $die = true) {
         die;
     }
 }
+function getCurrentUser() {
+//    Démarrer la session si pas encore démarrée
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+//   récupérer l'utilisateur en cours si connecté'
+if (isset($_SESSION["id"]))
+{
+    return getOneEntity("utilisateur", $_SESSION["id"]);
+}
+
+return null;
+}
 
 /**
  * Affiche le contenu du fichier header.php

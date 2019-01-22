@@ -3,98 +3,94 @@
 require_once "model/database.php";
 require_once "functions.php";
 
+$id = $_GET["id"]; // Récupérer l'id dans l'URL
+$sejour = getOneEntity("sejour", $id);
+$departs = getAllDepartsBySejour($id); // Envoi l'id su séjour à la fonction pour récupérer les départs liés au séjour
+
+
 getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
 ?>
 
 
-
-<!-- ===============NAVIGATION PRINCIPALE===============
-======================================== -->
+    <!-- ===============NAVIGATION PRINCIPALE===============
+    ======================================== -->
 
 
 <?php getMenu(); ?>
 
-<!-- ===============SEJOUR===============
-======================================== -->
-<section class="sejour container">
+    <!-- ===============SEJOUR===============
+    ======================================== -->
+    <section class="sejour container">
 
-    <h1>Votre séjour</h1>
+        <h1>Votre séjour</h1>
 
-    <h2>Les trésors du Yucatan</h2>
+        <h2><?= $sejour["libelle"]; ?></h2>
 
-    <img src="./images/bg-destination-card-mexique.png" alt="">
+        <img src="uploads/<?= $sejour["image"]; ?>" alt="<?= $pays["libelle"]; ?>">
 
-    <article>
-        <p>Le Mexique, et en particulier le Yucatán, est une terre de rêve. Elle y mêle quelques-uns des plus beaux
-            sites mayas, riche patrimoine culturel, et des trésors naturels, comme la mer des Caraïbes ou les cenotes,
-            ces puits souterrains ou à ciel ouvert, trous d’eau qui parsèment le plateau calcaire du Yucatán.
+        <article>
+            <p><?= $sejour["description_princ"]; ?></p>
 
-            L’âme indienne y est bien vivante, celle de la civilisation raffinée des Mayas à leur grande époque bien
-            sûr, mais également celle des Mayas d’aujourd’hui, qui ont gardé leurs us et coutumes. </p>
-
-        <p>Vous apprécierez:
-
-            Des sites mayas incontournables et hors sentiers battus
-
-            Un délicieux cocktail d’écotourisme et de découverte culturelle
-
-            Palenque et les sites de la forêt lacandone au Chiapas
-
-            Un itinéraire ponctué de baignades en mer, en cenote et en lagune</p>
+            <p><?= $sejour["description_sec"]; ?></p>
 
 
-        <table>
+            <table>
 
 
-            <tr>
-                <th>DU</th>
-                <th>AU</th>
-                <th>PRIX</th>
-                <th>Nombre de places restantes</th>
-                <th>S'inscrire</th>
+                <tr>
+                    <th>DU</th>
+                    <th>AU</th>
+                    <th>PRIX</th>
+                    <th>Nombre de places restantes</th>
+                    <th>S'inscrire</th>
+                </tr>
+                <?php foreach ($departs as $depart) : ?>
+                    <tr>
+                        <td><?= $depart["date_debut"]; ?></td>
+                        <td><?= $depart["date_fin"]; ?></td>
+                        <!--                + durée en jours = date de fin-->
+                        <td><?= $depart["prix"]; ?></td>
+                        <td><?= $depart["places_dispo"]; ?></td>
+                        <!--                - nb réservations-->
+                        <td>
+                            <form action="">
+                                <button class="btn" type="submit">S'inscrire</button>
+                            </form>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
 
-            <tr>
-                <td>14/02/2019</td>
-                <td>21/02/2019</td>
-                <td>2500 €</td>
-                <td>10</td>
-                <td>
-                    <form action="">
-                        <button class="btn" type="submit">S'inscrire</button>
-                    </form>
-                </td>
-            </tr>
+            <p class="asterisque"> * Ces tarifs sont valables pour des départs de Paris. Des départs d'autres villes
+                sont
+                possibles, n'hésitez pas à nous en faire la demande. Les prix indiqués ne sont valables que pour
+                certaines
+                classes de réservation sur les compagnies aériennes qui desservent cette destination. Ils sont donc
+                susceptibles d'être modifiés en cas d'indisponibilité de places dans ces classes au moment de la
+                réservation.
 
-        </table>
+                Le prix comprend
 
-        <p class="asterisque"> * Ces tarifs sont valables pour des départs de Paris. Des départs d'autres villes sont
-            possibles, n'hésitez pas à nous en faire la demande. Les prix indiqués ne sont valables que pour certaines
-            classes de réservation sur les compagnies aériennes qui desservent cette destination. Ils sont donc
-            susceptibles d'être modifiés en cas d'indisponibilité de places dans ces classes au moment de la
-            réservation.
+                • Le transport aérien international et les taxes d’aéroport
+                • Les transferts terrestres nécessaires au bon déroulement du voyage
+                • Le transport des bagages
+                • L'encadrement par un guide indien francophone
+                • L’assistance d’un guide anglophone lors des randonnées (à Periyar et Munnar)
+                • L’hébergement en pension complète, sauf les boissons et certains repas (à Cochin)
+                • Les frais d'entrée aux sites
 
-            Le prix comprend
+                Le prix ne comprend pas
 
-            • Le transport aérien international et les taxes d’aéroport
-            • Les transferts terrestres nécessaires au bon déroulement du voyage
-            • Le transport des bagages
-            • L'encadrement par un guide indien francophone
-            • L’assistance d’un guide anglophone lors des randonnées (à Periyar et Munnar)
-            • L’hébergement en pension complète, sauf les boissons et certains repas (à Cochin)
-            • Les frais d'entrée aux sites
+                • Les assurances
+                • Les frais d’inscription
+                • Les frais de visa
+                • Les repas à Cochin
+                • Les entrées des sites non prévus au programme
+                • Les boissons, les dépenses personnelles et les pourboires
+                • Les frais de transferts aéroport en cas de vol différent de celui du groupe
+                • Le supplément chambre individuelle (à la demande)
+            </p>
 
-            Le prix ne comprend pas
-
-            • Les assurances
-            • Les frais d’inscription
-            • Les frais de visa
-            • Les repas à Cochin
-            • Les entrées des sites non prévus au programme
-            • Les boissons, les dépenses personnelles et les pourboires
-            • Les frais de transferts aéroport en cas de vol différent de celui du groupe
-            • Le supplément chambre individuelle (à la demande)
-        </p>
-
-</section>
+    </section>
 
 <?php getFooter(); ?>

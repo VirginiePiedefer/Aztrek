@@ -1,0 +1,33 @@
+
+  // ==========BUTTONS==========
+
+@mixin button ($bg-color, $fsize) {
+    display: inline-block;
+    // padding: .5em 1em;
+    margin: auto;
+    font-size: $fsize-small;
+    background-color: $bg-color;
+    border-radius: 5px;
+    transition: .5s;
+    height: 43px;
+    width: 271px;
+    border: none;
+    
+  
+    &:hover,
+    &:focus {
+      background-color: darken($bg-color, 10%);
+      color: $fcolor-light;
+    }
+
+
+    a{
+      color: $fcolor-light;
+    }
+  };
+
+ 
+
+  // ==========CARDS==========
+
+  
