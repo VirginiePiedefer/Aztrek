@@ -16,16 +16,16 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
         <div class="owl-carousel owl-carousel-1 owl-theme position">
 
             <div class="item">
-                <img src="./images/img-slider-1.png" alt="perroquet" srcset="">
+                <img src="images/img-slider-1.png" alt="perroquet" srcset="">
             </div>
 
             <div class="item">
-                <img src="./images/img-slider-2.jpg" alt="flamant rose" srcset="">
+                <img src="images/img-slider-2.jpg" alt="flamant rose" srcset="">
             </div>
 
         </div>
 
-        <img class="logo" src="./images/logo-aztrek-jaune-baseline-vectorise-01.svg" alt="logo2">
+        <img class="logo" src="images/logo-aztrek-jaune-baseline-vectorise-01.svg" alt="logo2">
 
         <!-- ===============POP-UP===============
 ======================================== -->
@@ -45,12 +45,12 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                     <button class="btn"><a href="#">Avec mon adresse mail</a></button>
 
 
-                    <img class="icone-connexion" src="./images/connexion.png" alt="#">
+                    <img class="icone-connexion" src="images/connexion.png" alt="#">
 
                     <p class="connexion">Déjà membre ? <a>Connectez-vous</a></p>
 
                     <div class="display-flex membres">
-                        <img src="./images/profils.png" alt="">
+                        <img src="images/profils.png" alt="">
 
                         <p>Déjà plus de 10 000 membres</p>
 
@@ -90,13 +90,13 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                         <div class="titre-pays-wrapper">
                             <h2 class="titre-pays">MEXIQUE</h2>
                         </div>
-                        <img class="photo-pays" src="./images/bg-destination-card-mexique.png" alt="mexique">
+                        <img class="photo-pays" src="images/bg-destination-card-mexique.png" alt="mexique">
                     </div>
 
                     <div class="encart-voyage">
                         <div class="display-flex">
                             <div class="">
-                                <img src="./images/profils.png" alt="membres">
+                                <img src="images/profils.png" alt="membres">
                             </div>
 
                             <div class="descriptif-voyage">
@@ -106,7 +106,7 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
 
 
                             <div class="plus display-flex">
-                                <img class="plus" src="./images/icons-plus.png" alt="+">
+                                <img class="plus" src="images/icons-plus.png" alt="+">
                             </div>
 
                         </div>
@@ -125,13 +125,13 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                     <div class="titre-pays-wrapper">
                         <h2 class="titre-pays">HONDURAS</h2>
                     </div>
-                    <img class="photo-pays" src="./images/bg-destination-card-honduras.png" alt="honduras">
+                    <img class="photo-pays" src="images/bg-destination-card-honduras.png" alt="honduras">
                 </div>
 
                 <div class="encart-voyage">
                     <div class="display-flex">
                         <div class="">
-                            <img src="./images/profils.png" alt="membres">
+                            <img src="images/profils.png" alt="membres">
                         </div>
 
                         <div class="descriptif-voyage">
@@ -140,7 +140,7 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                         </div>
 
                         <div class="plus display-flex">
-                            <img class="plus" src="./images/icons-plus.png" alt="+">
+                            <img class="plus" src="images/icons-plus.png" alt="+">
                         </div>
                     </div>
                 </div>
@@ -157,13 +157,13 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                         <div class="titre-pays-wrapper">
                             <h2 class="titre-pays">COSTA RICA</h2>
                         </div>
-                        <img class="photo-pays" src="./images/bg-destination-card-costarica.png" alt="costarica">
+                        <img class="photo-pays" src="images/bg-destination-card-costarica.png" alt="costarica">
                     </div>
 
                     <div class="encart-voyage">
                         <div class="display-flex">
                             <div class="">
-                                <img src="./images/profils.png" alt="membres">
+                                <img src="images/profils.png" alt="membres">
                             </div>
 
                             <div class="descriptif-voyage">
@@ -172,7 +172,7 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                             </div>
 
                             <div class="plus display-flex">
-                                <img class="plus" src="./images/icons-plus.png" alt="+">
+                                <img class="plus" src="images/icons-plus.png" alt="+">
                             </div>
                         </div>
                     </div>
@@ -189,13 +189,13 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                         <div class="titre-pays-wrapper">
                             <h2 class="titre-pays">SALVADOR</h2>
                         </div>
-                        <img class="photo-pays" src="./images/bg-destination-card-salvador.png" alt="salvador">
+                        <img class="photo-pays" src="images/bg-destination-card-salvador.png" alt="salvador">
                     </div>
 
                     <div class="encart-voyage">
                         <div class="display-flex">
                             <div class="">
-                                <img src="./images/profils.png" alt="membres">
+                                <img src="images/profils.png" alt="membres">
                             </div>
 
                             <div class="descriptif-voyage">
@@ -204,7 +204,7 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                             </div>
 
                             <div class="plus display-flex">
-                                <img class="plus" src="./images/icons-plus.png" alt="+">
+                                <img class="plus" src="images/icons-plus.png" alt="+">
                             </div>
                         </div>
                     </div>
@@ -221,13 +221,13 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                         <div class="titre-pays-wrapper">
                             <h2 class="titre-pays">GUATEMALA</h2>
                         </div>
-                        <img class="photo-pays" src="./images/bg-destination-card-guatemala.png" alt="guatemala">
+                        <img class="photo-pays" src="images/bg-destination-card-guatemala.png" alt="guatemala">
                     </div>
 
                     <div class="encart-voyage">
                         <div class="display-flex">
                             <div class="">
-                                <img src="./images/profils.png" alt="membres">
+                                <img src="images/profils.png" alt="membres">
                             </div>
 
                             <div class="descriptif-voyage">
@@ -236,7 +236,7 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                             </div>
 
                             <div class="plus display-flex">
-                                <img class="plus" src="./images/icons-plus.png" alt="+">
+                                <img class="plus" src="images/icons-plus.png" alt="+">
                             </div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                     <div class="titre-pays-wrapper">
                         <h2 class="titre-pays">NOUVEAUTÉS</h2>
                     </div>
-                    <img class="photo-pays" src="./images/bg-destinations-nouveautes.png" alt="nouveautés">
+                    <img class="photo-pays" src="images/bg-destinations-nouveautes.png" alt="nouveautés">
                 </div>
 
             </article>
@@ -272,22 +272,22 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
         <div class="container owl-carousel owl-carousel-2 owl-theme position display-flex vignettes">
 
             <div class="vignette">
-                <img class="img-vignette" src="./images/thématique-img-cafe.png" alt="" srcset="">
+                <img class="img-vignette" src="images/thématique-img-cafe.png" alt="" srcset="">
                 <p>Sur la route du café</p>
             </div>
 
             <div class="vignette">
-                <img class="img-vignette" src="./images/thematique-img-aventure.png" alt="" srcset="">
+                <img class="img-vignette" src="images/thematique-img-aventure.png" alt="" srcset="">
                 <p>À l'aventure</p>
             </div>
 
             <div class="vignette">
-                <img class="img-vignette" src="./images/thematique-img-volcans.png" alt="" srcset="">
+                <img class="img-vignette" src="images/volcans.jpg" alt="" srcset="">
                 <p>À l'assaut des volcans</p>
             </div>
 
             <div class="vignette ">
-                <img class="img-vignette" src="./images/thématique-img-tribus.png" alt="" srcset="">
+                <img class="img-vignette" src="images/thématique-img-tribus.png" alt="" srcset="">
                 <p>Sur les traces des tribus ancestrales</p>
             </div>
 
@@ -310,7 +310,7 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
         <div class="articles">
 
             <div class="card card-7">
-                <img class="img-conseil" src="./images/A.jpg" alt="">
+                <img class="img-conseil" src="images/A.jpg" alt="">
                 <div class="encart display-flex">
                     <p>À SAVOIR</p>
                     <p>Passeport, vaccins, change…les indispensables pour partir l’esprit tranquille</p>
@@ -318,7 +318,7 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
             </div>
 
             <div class="card card-8">
-                <img class="img-conseil" src="./images/B.jpg" alt="">
+                <img class="img-conseil" src="images/B.jpg" alt="">
                 <div class="encart display-flex">
                     <p>PRATIQUE</p>
                     <p>Équipement, matériel, tout ce qu’il faut prévoir avant le départ !</p>
@@ -326,7 +326,7 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
             </div>
 
             <div class="card card-9">
-                <img class="img-conseil" src="./images/C.jpg" alt="">
+                <img class="img-conseil" src="images/C.jpg" alt="">
                 <div class="encart display-flex">
                     <p>BON PLAN</p>
                     <p>Partez avec AZTREK, parrainez des proches et cumulez des « pas » qui récompensent votre

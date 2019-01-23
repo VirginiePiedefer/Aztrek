@@ -41,8 +41,8 @@ $liste_pays = getAllEntities("pays"); ?>
             <div class="nav-1 display-flex">
                 <a class="logo-nav" href="#"><img src="images/logo-nav-vectorise.svg" alt="logo"></a>
                 <ul class="menu menu-1 display-flex">
-                    <li><a class="icones menu-1-item home" href="index.php"><img src="images/icone-accueil.png"
-                                                                                 alt="home"></a>
+                    <li><a class="icones menu-1-item home" href="../index.php"><img src="images/icone-accueil.png"
+                                                                                    alt="home"></a>
                     </li>
                     <li>
                         <a class="menu-destinations menu-1-item" href="#">DESTINATIONS</span></a>
@@ -67,13 +67,13 @@ $liste_pays = getAllEntities("pays"); ?>
                         </ul>
 
                     </li>
-                    <li><a class="menu-1-item" href="#">CONTACT</span></a></li>
+                    <li><a class="menu-1-item" href="#">CONTACT</a></li>
                     <?php if (isset($user)) : ?>
                         <li><a href="#"><i class="fa fa-user"></i> <?= $user["email"]; ?></a></li>
-                        <li><a href="<?= SITE_ADMIN . "logout.php"; ?>"><i class="fa fa-sign-out"></i> DÉCONNEXION</a></li>
+                        <li><a href="<?= SITE_ADMIN . "logout.php"; ?>"><i class="fa fa-sign-out"></i>DÉCONNEXION</a></li>
                     <?php else: ?>
                         <li><a class="menu-1-item" href="<?= SITE_URL . "create_account.php"; ?>"><i class="fa fa-sign-in"></i> Créer mon compte</a></li>
-                        <li><a class="menu-1-item" href="<?= SITE_ADMIN; ?>"><i class="fa fa-sign-in"></i> CONNEXION</a></li>
+                        <li><a class="menu-1-item" href="<?= SITE_ADMIN; ?>"><i class="fa fa-sign-in"></i>CONNEXION</a></li>
                     <?php endif; ?>
                 </ul>
 

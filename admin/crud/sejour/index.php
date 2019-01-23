@@ -41,8 +41,8 @@ require_once '../../layout/header.php';
         <tr>
             <th>Titre</th>
             <th>Image</th>
-            <th>Catégorie</th>
             <th>Pays</th>
+            <th>Catégorie</th>
             <th class="actions">Actions</th>
         </tr>
     </thead>
@@ -53,8 +53,8 @@ require_once '../../layout/header.php';
                 <td>
                     <img src="../../../uploads/<?php echo $sejour['image']; ?>" class="img-thumbnail">
                 </td>
-                <td><?php echo $sejour['categorie']; ?></td>
                 <td><?php echo $sejour['pays']; ?></td>
+                <td><?php echo $sejour['categorie']; ?></td>
                 <td class="actions">
                     <a href="update.php?id=<?php echo $sejour['id']; ?>" class="btn btn-warning">
                         <i class="fa fa-edit"></i>

@@ -6,7 +6,9 @@ require_once "functions.php";
 $id = $_GET["id"]; // Récupérer l'id dans l'URL
 $sejour = getOneEntity("sejour", $id);
 $departs = getAllDepartsBySejour($id); // Envoi l'id su séjour à la fonction pour récupérer les départs liés au séjour
+$programmes = getAllProgrammesBySejour($id);
 
+$user = getCurrentUser();
 
 getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
 ?>
@@ -34,6 +36,16 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
             <p><?= $sejour["description_sec"]; ?></p>
 
 
+            <h3>Le programme</h3>
+
+            <?php foreach ($programmes as $programme) : ?>
+
+                <h2><?= $programme["libelle"]; ?></h2>
+                <p><?= $programme["description"]; ?></p>
+
+                <img class="photo-sejour" src="uploads/<?= $programme["image"]; ?>" alt="<?= $programme["libelle"]; ?>">
+            <?php endforeach; ?>
+
             <table>
 
 
@@ -44,6 +56,7 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                     <th>Nombre de places restantes</th>
                     <th>S'inscrire</th>
                 </tr>
+
                 <?php foreach ($departs as $depart) : ?>
                     <tr>
                         <td><?= $depart["date_debut_format"]; ?></td>
@@ -53,9 +66,16 @@ getHeader("Accueil", "Aztrek, un nouveau monde à chaque pas");
                         <td><?= $depart["places_dispo"]; ?></td>
                         <!--              capacité  - nb réservations-->
                         <td>
-                            <form action="">
-                                <button class="btn" type="submit">S'inscrire</button>
-                            </form>
+                            <?php if (isset($user)) : ?>
+                                <form action="">
+                                    <input type="number" min="1" max="20" placeholder="Nombre de personnes">
+                                    <button class="btn" type="submit">Réserver</button>
+                                </form>
+                            <?php else: ?>
+                                <a class="btn" href="<?= SITE_URL . "create_account.php"; ?>"> Créer mon compte</a>
+                                <a class="btn" href="<?= SITE_ADMIN; ?>">Déjà membre ? Se connecter</a>
+                            <?php endif; ?>
+
                         </td>
                     </tr>
                 <?php endforeach; ?>

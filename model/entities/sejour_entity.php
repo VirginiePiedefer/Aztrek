@@ -105,3 +105,22 @@ function getAllSejours(int $limit = 999)
 //    return $stmt->fetch();
 //
 //}
+function getAllProgrammesBySejour(int $id)
+{
+    global $connection;
+
+    $query = "
+    SELECT
+      programme.*
+    FROM programme
+    WHERE programme.sejour_id = :id
+    ORDER BY programme.jour_n 
+    ";
+
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":id", $id);
+    $stmt->execute();
+
+    return $stmt->fetchAll();
+}

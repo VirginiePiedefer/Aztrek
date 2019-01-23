@@ -10,7 +10,7 @@ require_once '../../layout/header.php';
 
 <form action="create_query.php" method="POST" enctype="multipart/form-data">
     <div class="form-group">
-        <label>Titre</label>
+        <label>Nom du séjour</label>
         <input type="text" name="titre" class="form-control" placeholder="Titre" required>
     </div>
     <div class="form-group">
@@ -35,18 +35,7 @@ require_once '../../layout/header.php';
         <label>Description courte</label>
         <input type="text" name="description_courte" class="form-control" placeholder="Description courte" required>
     </div>
-    <div class="form-group">
-        <label>Nombre de couverts</label>
-        <input type="number" name="couverts" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label>Temps de preparation</label>
-        <input type="time" name="temps_prepa" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label>Temps de cuisson</label>
-        <input type="time" name="temps_cuisson" class="form-control" required>
-    </div>
+
     <div class="form-group form-check">
         <input type="checkbox" name="publie" class="form-check-input" required>
         <label>Publié ?</label>
