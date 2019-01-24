@@ -35,22 +35,32 @@ require_once '../../layout/header.php';
     </div>
 <?php endif; ?>
 
+
 <table class="table table-striped table-bordered table-condensed">
     <thead class="thead-light">
         <tr>
             <th>Libellé</th>
+            <th>Image</th>
+            <th>Description</th>
             <th class="actions">Actions</th>
         </tr>
     </thead>
     <tbody>
+
         <?php foreach ($categories as $categorie) : ?>
             <tr>
-                <td><?php echo $categorie['libelle']; ?></td>
+
+                <td><?php echo $categorie['libelle']; ?>
+                <td>
+                <img src="../../../uploads/<?php echo $categorie['image']; ?>" class="img-thumbnail"></td>
+                <td><?php echo $categorie['description']; ?></td>
                 <td class="actions">
+
                     <a href="update.php?id=<?php echo $categorie['id']; ?>" class="btn btn-warning">
                         <i class="fa fa-edit"></i>
                         Modifier
                     </a>
+
                     <form action="delete_query.php" method="POST">
                         <input type="hidden" name="id" value="<?php echo $categorie['id']; ?>">
                         <button type="submit" class="btn btn-danger">

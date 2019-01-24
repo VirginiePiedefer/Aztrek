@@ -124,3 +124,38 @@ function getAllProgrammesBySejour(int $id)
 
     return $stmt->fetchAll();
 }
+
+function insertSejour(string $libelle, int $pays_id, string $image, string $description_princ, string $description_sec, int $categorie_id, int $duree, int $places) {
+    global $connection;
+
+    $query = "INSERT INTO sejour (libelle, pays_id, image, description_princ, description_sec, categorie_id, duree, places) VALUES (:libelle, :pays_id, :image, :description_princ, :description_sec, :categorie_id, :duree, :places)";
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":libelle", $libelle);
+    $stmt->bindParam(":pays_id", $pays_id);
+    $stmt->bindParam(":categorie_id", $categorie_id);
+    $stmt->bindParam(":image", $image);
+    $stmt->bindParam(":description_princ", $description_princ);
+    $stmt->bindParam(":description_sec", $description_sec);
+    $stmt->bindParam(":duree", $duree);
+    $stmt->bindParam(":places", $places);
+    $stmt->execute();
+}
+
+function updateSejour(int $id, string $libelle, int $pays_id, string $image, string $description_princ, string $description_sec, int $categorie_id, int $duree, int $places) {
+    global $connection;
+
+    $query = "UPDATE sejour SET libelle = :libelle, pays_id = :pays_id, image = :image, description_princ = :description_princ, description_sec = :description_sec, categorie_id = :categorie_id, duree = :duree, places = :places WHERE id = :id";
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":id", $id);
+    $stmt->bindParam(":libelle", $libelle);
+    $stmt->bindParam(":pays_id", $pays_id);
+    $stmt->bindParam(":categorie_id", $categorie_id);
+    $stmt->bindParam(":image", $image);
+    $stmt->bindParam(":description_princ", $description_princ);
+    $stmt->bindParam(":description_sec", $description_sec);
+    $stmt->bindParam(":duree", $duree);
+    $stmt->bindParam(":places", $places);
+    $stmt->execute();
+}

@@ -1,7 +1,7 @@
 <?php
 require_once '../../../model/database.php';
 
-//$recipes = getAllRecettes();
+
 $sejours = getAllSejours ();
 
 $error_msg = null;
@@ -43,6 +43,11 @@ require_once '../../layout/header.php';
             <th>Image</th>
             <th>Pays</th>
             <th>Catégorie</th>
+            <th>Description_princ</th>
+            <th>Description_sec</th>
+            <th>Durée</th>
+            <th>Capacité: nb de places</th>
+
             <th class="actions">Actions</th>
         </tr>
     </thead>
@@ -53,8 +58,19 @@ require_once '../../layout/header.php';
                 <td>
                     <img src="../../../uploads/<?php echo $sejour['image']; ?>" class="img-thumbnail">
                 </td>
+
                 <td><?php echo $sejour['pays']; ?></td>
+
                 <td><?php echo $sejour['categorie']; ?></td>
+
+                <td><?php echo $sejour['description_princ']; ?></td>
+
+                <td><?php echo $sejour['description_sec']; ?></td>
+
+                <td><?php echo $sejour['duree']; ?></td>
+
+                <td><?php echo $sejour['places']; ?></td>
+
                 <td class="actions">
                     <a href="update.php?id=<?php echo $sejour['id']; ?>" class="btn btn-warning">
                         <i class="fa fa-edit"></i>

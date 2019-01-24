@@ -22,3 +22,4 @@ function getAllDepartsBySejour(int $id): array {
 
     return $stmt->fetchAll();
 }
+

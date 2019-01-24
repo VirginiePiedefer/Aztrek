@@ -2,59 +2,75 @@
 require_once '../../../model/database.php';
 
 $id = $_GET['id'];
-$photo = getEntity("recette", $id);
-$liste_categories = getAllEntities("categorie");
-$liste_tags = getAllEntities("tag");
 
-$photo_liste_tags = getAllTagsByPhoto($id);
-$photo_liste_tags_ids = [];
-foreach ($photo_liste_tags as $tag) {
-    $photo_liste_tags_ids[] = $tag["id"];
-}
+$sejour = getOneEntity("sejour", $id);
+$liste_pays = getAllEntities("pays");
+$categories = getAllEntities("categorie");
+
+
 
 require_once '../../layout/header.php';
 ?>
 
-<h1>Modification d'une photo</h1>
+<h1>Modification d'un séjour</h1>
 
 <form action="update_query.php" method="POST" enctype="multipart/form-data">
     <div class="form-group">
-        <label>Titre</label>
-        <input type="text" name="titre" value="<?php echo $photo["titre"]; ?>" class="form-control" placeholder="Titre" required>
+        <label>Nom du séjour</label>
+        <input type="text" name="libelle" value="<?php echo $sejour["libelle"]; ?>" class="form-control" placeholder="Libellé" required>
     </div>
+
+    <div class="form-group">
+        <label>Pays</label>
+        <select name="pays_id" class="form-control" value="pays_id">
+            <?php foreach ($liste_pays as $pays) : ?>
+                <option value="<?php echo $pays["id"]; ?>">
+                    <?php echo $pays["libelle"]; ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Catégorie</label>
+        <select name="categorie_id" class="form-control" value="categorie_id">
+            <?php foreach ($categories as $categorie) : ?>
+                <option value="<?php echo $categorie["id"]; ?>">
+                    <?php echo $categorie["libelle"]; ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+
     <div class="form-group">
         <label>Image</label>
         <input type="file" name="image" class="form-control">
-        <?php if ($photo["image"]) : ?>
-            <img src="../../../uploads/<?php echo $photo["image"]; ?>" class="img-thumbnail">
+        <?php if ($sejour["image"]) : ?>
+            <img src="../../../uploads/<?php echo $sejour["image"]; ?>" class="img-thumbnail">
         <?php endif; ?>
     </div>
+
     <div class="form-group">
         <label>Description</label>
-        <textarea name="description" class="form-control"><?php echo $photo["description"]; ?></textarea>
+        <textarea name="description_princ" class="form-control"><?php echo $sejour["description_princ"]; ?></textarea>
     </div>
+
     <div class="form-group">
-        <label>Catégorie</label>
-        <select name="categorie_id" class="form-control">
-            <?php foreach ($liste_categories as $categorie) : ?>
-                <?php $selected = ($categorie["id"] == $photo["categorie_id"]) ? "selected" : ""; ?>
-                <option value="<?php echo $categorie["id"]; ?>" <?php echo $selected; ?>>
-                    <?php echo $categorie["titre"]; ?>
-                </option>
-            <?php endforeach; ?>
-        </select>
+        <label>Description courte</label>
+        <textarea name="description_sec" class="form-control"><?php echo $sejour["description_sec"]; ?></textarea>
     </div>
+
     <div class="form-group">
-        <label>Tags</label>
-        <select name="tag_ids[]" class="form-control" multiple>
-            <?php foreach ($liste_tags as $tag) : ?>
-                <?php $selected = (in_array($tag["id"], $photo_liste_tags_ids)) ? "selected" : ""; ?>
-                <option value="<?php echo $tag["id"]; ?>" <?php echo $selected; ?>>
-                    <?php echo $tag["titre"]; ?>
-                </option>
-            <?php endforeach; ?>
-        </select>
+        <label>Durée</label>
+        <input type="number" name="duree" class="form-control" placeholder="Durée" value="<?php echo $sejour["duree"]; ?>" required>
     </div>
+
+    <div class="form-group">
+        <label>Capacité: nombre de places</label>
+        <input type="number" name="places" class="form-control" placeholder="Places" value="<?php echo $sejour["places"]; ?>" required>
+    </div>
+
+
     <input type="hidden" name="id" value="<?php echo $id; ?>"> 
     <button type="submit" class="btn btn-success">
         <i class="fa fa-check"></i>

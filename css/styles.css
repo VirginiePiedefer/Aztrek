@@ -203,7 +203,7 @@ h2 {
   background-color: #fff; }
 
 .menu .sub-menu {
-  z-index: 2; }
+  z-index: 9999; }
 
 .slider-pop {
   position: relative; }
